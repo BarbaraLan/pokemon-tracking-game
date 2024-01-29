@@ -1,15 +1,15 @@
-#TITTLE
+# TITTLE
 
-##DESCRIPTION
+## DESCRIPTION
 
-##STACK
+## STACK
 - JavaScript
 - HTML
 - CSS
 
 The approach for this game is to use classes and orient the code to objects
 
-##MVP
+## MVP
 - have a game board
 - have a player
 - have a car
