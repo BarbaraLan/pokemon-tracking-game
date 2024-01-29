@@ -23,7 +23,7 @@ class Game {
 
     endGame() {
         if (this.gameOver === true) {
-            endGameDisplay = document.querySelector("#game-over").style.display = 'flex';
+            endGameDisplay = document.querySelector("#gameOver").style.display = 'flex';
         }
     }
 }

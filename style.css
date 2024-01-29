@@ -5,7 +5,28 @@
     font-family: 'Sixtyfour', sans-serif;
 }
 
-body {
+#start-board {
+    width: 850px;
+    height: 700px;
+    background-color: rgb(122, 203, 231);
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-image: url('pokemon-images/introImage2.gif');
+}
+
+h1{
+  text-align: center;
+}
+
+#startButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-size-adjust: 20px;
+  }
+
+#body {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,26 +34,35 @@ body {
 }
 
 #game-board {
-    width: 960px;
-    height: 720px;
-    background-color: pink;
+    display: none;
+    width: 850px;
+    height: 700px;
+    background-color: rgb(122, 203, 231);
     position: relative;
     overflow: hidden;
-    background-image: url('./pokemon-images/background\ game\ .jpg');
     background-size: cover;
+    background-image: url('https://i.giphy.com/4N1FZFE5AGO3qrUGkw.webp');
 }
 
 #player {
+    display: none;
     position: absolute;
     top: 100px;
     left: 100px;
-    width: 75px;
-    height: 75px;
+    width: 100px;
+    height: 100px;
     background-image: url('./pokemon-images/charmander2.png');
     background-size: cover;
 }
 
-#game-over {
+.enemy{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+}
+
+#gameOver {
     position: absolute;
     top: 50%;
     left: 50%;

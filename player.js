@@ -47,7 +47,7 @@ class Player {
         }
     }
 
-    /* crashTest() {
+    crashTest() {
         game.enemies.forEach((enemy) => {
             const enemyLeftEdge = enemy.x;
             const enemyRightEdge = enemy.x + enemy.width;
@@ -70,7 +70,7 @@ class Player {
                 enemy.deSpawn();
             }
         });
-     } */
+     } 
     }
 
 /*  
