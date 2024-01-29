@@ -19,12 +19,11 @@ startButton.onclick = () => {
     const deletePage = document.querySelector("#start-board");
     deletePage.remove()
     const newBoard = document.querySelector("#game-board");
-    newBoard.style.display='block'
-    const displayPlayer = document.querySelector("#player");
-    displayPlayer.style.display='block'
-
+    newBoard.style.visibility='visible'
+    
     game = new Game(gameLives);
     const gameOverElement = document.querySelector('#gameOver')
+    game.player.element.style.visibility='visible'
 
     function gameLoop() {
         if (!game.gameOver) {
