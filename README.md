@@ -16,12 +16,12 @@ The approach for this game is to use classes and orient the code to objects
 - have a score
 - have a timer
 
-##BACKLOG
-- add more enemies
-- add more levels
-- select your character at the beginning
+## BACKLOG
+- add different quind of enemies not only one, with different velocities
+- add more levels and with them, different cackground
+- select your character at the beginning (3 options)
 
-##PROJECT PLANNING
+## PROJECT PLANNING
 My project was divided in smaller tasks. I used Trello to organize  my tasks and to keep track of my progress. I also used wireframe to have better idea of how my game would look like.
 
 LINK OF THE PUBLISHED GAME: https://barbaralan.github.io/pokemon-tracking-game/
