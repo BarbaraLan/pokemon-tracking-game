@@ -1,7 +1,7 @@
 console.log('hello world')
-let enemyCreationFrame = 100;
-let scoreIncrementFrame = 10;
-let enemyVelocity = 10;
+//let enemyCreationFrame = 100;
+let catchesIncrementFrame = 10;
+//let enemyVelocity = 10;
 let gameLives = 3;
 
 const boardElement = document.querySelector("#game-board");
@@ -15,7 +15,7 @@ const game = new Game(gameLives);
 const gameOverElement = document.querySelector('#gameOver')
 
 function gameLoop() {
-    if (!game.game-over) {
+    if (!game.gameOver) {
         game.frames++;
         game.player.crashTest()
         if (game.frames % enemyCreationFrame === 0) {
@@ -49,7 +49,7 @@ requestAnimationFrame(gameLoop);
 
 
 document.addEventListener("keydown", (event) => {
-    if (!game.game-over) {
+    if (!game.gameOver) {
         game.player.move(event.key);
     }
 

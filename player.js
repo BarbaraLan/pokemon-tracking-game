@@ -47,8 +47,17 @@ class Player {
         }
     }
 
-    crashTest() {
+    /* crashTest() {
         game.enemies.forEach((enemy) => {
+            const enemyLeftEdge = enemy.x;
+            const enemyRightEdge = enemy.x + enemy.width;
+            const enemyTopEdge = enemy.y;
+            const enemyBottomEdge = enemy.y + enemy.height;
+
+            const playerLeftEdge = this.x;
+            const playerRightEdge = this.x + this.width;
+            const playerTopEdge = this.y;
+            const playerBottomEdge = this.y + this.height;
 
             if (
                 playerLeftEdge < enemyRightEdge &&
@@ -61,9 +70,10 @@ class Player {
                 enemy.deSpawn();
             }
         });
+     } */
     }
-}
 
+/*  
 class Power {
     constructor(x, y) {
         this.x = x;
@@ -78,5 +88,15 @@ class Power {
             if () { }
 
         }
+
+        powerButton = document.createElement('fire')
+        button.innerText = 'fire';
+        body.appendChild(button);
+        button.onclick =() => {
+            if (button === true) {
+                display fire
+            }
+        }
     }
 }
+*/
