@@ -1,7 +1,8 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
-    font-family: monospace;
+    font-family: 'Bungee Shade', sans-serif;
+    font-family: 'Sixtyfour', sans-serif;
 }
 
 body {
@@ -21,7 +22,7 @@ body {
     background-size: cover;
 }
 
-#player{
+#player {
     position: absolute;
     top: 100px;
     left: 100px;
@@ -36,5 +37,5 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%);
-    display : none;
+    display: none;
 }
