@@ -4,7 +4,7 @@ class Game {
         this.player = new Player(100, 100);
         this.catches = 0;
         this.frames = 0;
-        this.game-over = false;
+        this.gameOver = false;
         this.lives = lives;
         this.updateLives();
     }
@@ -22,8 +22,8 @@ class Game {
     }
 
     endGame() {
-        if (this.game-over === true) {
-            endGameDisplay = document.querySelector("#game-over").style.display = 'flex';
+        if (this.gameOver === true) {
+            endGameDisplay = document.querySelector("#gameOver").style.display = 'flex';
         }
     }
 }
