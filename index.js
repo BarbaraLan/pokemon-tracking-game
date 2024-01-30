@@ -38,14 +38,14 @@ startButton.onclick = () => {
                 console.log(game.enemies);
             }
 
-            if (game.catches >= 2) {
+            if (game.catches >= 10) {
                 game.level = ' 2';
                 game.updateLevels();
                 enemyCreationFrame = 100;
                 game.player.element.style.backgroundImage = "url('./pokemon-images/charmeleon.png')"
             }
 
-            if (game.catches >= 4) {
+            if (game.catches >= 20) {
                 game.level = ' 3';
                 game.updateLevels();
                 enemyCreationFrame = 50;
@@ -71,6 +71,7 @@ startButton.onclick = () => {
         }
     }
     requestAnimationFrame(gameLoop);
+    
 
     document.addEventListener("keydown", (event) => {
         if (!game.gameOver) {

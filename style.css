@@ -23,21 +23,26 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translateY(-260%);
+    transform: translateY(-175%); 
+    
+}
+
+#logoImage img{
+    width: 380px;
 }
 
 h1 {
     text-align: center;
     color: rgb(6, 79, 190);
-    transform: translateY(-500%);
-    font-size: 23px;
+    transform: translateY(-240%);
+    font-size: 30px;
 }
 
 #startButton {
     display: flex;
     align-items: center;
     bottom: 150px;
-    font-size: 30px;
+    font-size: 26px;
     color: rgb(255, 42, 0);
     background-color: rgb(239, 207, 207);
     visibility: hidden;
@@ -81,20 +86,35 @@ h1 {
 }
 
 #gameOver {
-    position: absolute;
+    position:absolute;
+    flex-direction: column;
     top: 50%;
     left: 50%;
-    transform: translate(-50%);
+    transform: translateY(140%) translateX(-30%);
     display: none;
+    gap: 50px;
+}
+#gameOver h2{
     background-color: crimson;
-    padding: 10px;
     color: white;
+    padding: 20px;
+}
+
+#gameOver button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+    background-color: white;
+    padding: 10px;
+    color: red;
 }
 
 .power {
     position: absolute;
     width: 40px;
     height: 40px;
-    background-image: url(./pokemon-images/fireBall.jpeg);
+    background-image: url(./pokemon-images/fireBall2\ copy.png);
     background-size: cover;
 }

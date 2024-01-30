@@ -30,8 +30,17 @@ class Game {
 
     endGame() {
         if (this.gameOver === true) {
-            endGameDisplay = document.querySelector("#gameOver").style.display = 'flex';
+            document.querySelector("#gameOver").style.display = 'flex';
+            game.player.deSpawnPlayer();
+            game.enemies.forEach((enemy) => {
+                enemy.deSpawn()})
+            document.querySelector("#game-board").style.backgroundImage = "url('./pokemon-images/endImage.gif')"
+            document.querySelector("#gameStats").remove()
+
+            const restartButton = document.querySelector("#restartButton")
+            restartButton.onclick =() => {
+                location.reload()
+            }
         }
     }
 }
-

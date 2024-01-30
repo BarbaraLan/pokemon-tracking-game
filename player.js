@@ -75,5 +75,9 @@ class Player {
             }
         });
     }
+
+    deSpawnPlayer() {
+        this.element.remove()
+    }
 }
 
