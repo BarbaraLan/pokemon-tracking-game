@@ -2,7 +2,7 @@ class Player {
     constructor(x, y) {
         this.x = x;
         this.y = y;
-        this.velocity = 10
+        this.velocity = 40
         this.element = document.querySelector("#player");
         this.width = this.element.getBoundingClientRect().width;
         this.height = this.element.getBoundingClientRect().height;
@@ -11,6 +11,7 @@ class Player {
     }
 
     move(direction) {
+        console.log(direction);
         switch (direction) {
             case "ArrowUp":
                 this.y -= this.velocity;
@@ -23,6 +24,9 @@ class Player {
                 break;
             case "ArrowRight":
                 this.x += this.velocity;
+                break;
+            case " ":
+                game.powers.push(new Power());
                 break;
         };
 
@@ -70,33 +74,6 @@ class Player {
                 enemy.deSpawn();
             }
         });
-     } 
-    }
-
-/*  
-class Power {
-    constructor(x, y) {
-        this.x = x;
-        this.y = y;
-        this.velocity = 10
-
-        powerOption() {
-            this.element
-            document.createElement('')
-            const firePower = 
-
-            if () { }
-
-        }
-
-        powerButton = document.createElement('fire')
-        button.innerText = 'fire';
-        body.appendChild(button);
-        button.onclick =() => {
-            if (button === true) {
-                display fire
-            }
-        }
     }
 }
-*/
+
