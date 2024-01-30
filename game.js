@@ -7,7 +7,7 @@ class Game {
         this.frames = 0;
         this.gameOver = false;
         this.powers = []
-        this.level = level
+        this.level = ' 1'
         this.lives = lives;
         this.updateLives();
     }
@@ -22,12 +22,6 @@ class Game {
 
     updateLevels() {
         document.querySelector("#levels").innerText = this.level;
-        if (this.level = level2) {
-            this.level += 1
-        }
-        else if (this.level = level3) {
-            this.level += 2
-        }
     }
 
     updateCatches() {

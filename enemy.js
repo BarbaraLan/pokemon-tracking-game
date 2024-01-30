@@ -1,19 +1,21 @@
 class Enemy {
-    constructor(velocity, level) {
+    constructor(velocity) {
         const imagesLevel1 = ["url('./pokemon-images/psyduck.png')", "url('./pokemon-images/ditto.png')", "url('./pokemon-images/cubone.png')"]
-        const imagesLevel2 = ["url('./pokemon-images/gastly.png)", "url('./pokemon-images/110.png)", "url('./pokemon-images/gengar2.png)"]
-        const imagesLevel3 = ["url('./pokemon-images/ekans.webp)", "url('./pokemon-images/poliwhirl.png)", "url('./pokemon-images/mewtwo.png)"]
-        const imagesArray = enemyImage() {
-            if (game.level === level1) {
+        const imagesLevel2 = ["url('./pokemon-images/gastly.png')", "url('./pokemon-images/110.png')", "url('./pokemon-images/gengar2.png')"]
+        const imagesLevel3 = ["url('./pokemon-images/ekans.webp')", "url('./pokemon-images/poliwhirl.png')", "url('./pokemon-images/mewtwo.png')"]
+        const imagesArray = enemyImage()
+        
+        function enemyImage() {
+            if (game.level === ' 1') {
             return imagesLevel1
         }
-        else if (game.level === level2) {
+            else if (game.level === ' 2') {
             return imagesLevel2
         }
-        else if (game.level === level3) {
+        else if (game.level === ' 3') {
             return imagesLevel3
         }
-    };
+    }; 
         this.velocity = velocity;
 this.element = document.createElement("div");
 this.element.classList.add("enemy");
