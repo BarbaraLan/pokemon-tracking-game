@@ -5,6 +5,7 @@ class Game {
         this.catches = 0;
         this.frames = 0;
         this.gameOver = false;
+        this.powers = []
         this.lives = lives;
         this.updateLives();
     }

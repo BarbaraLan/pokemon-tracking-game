@@ -11,6 +11,7 @@ class Player {
     }
 
     move(direction) {
+        console.log(direction);
         switch (direction) {
             case "ArrowUp":
                 this.y -= this.velocity;
@@ -23,6 +24,9 @@ class Player {
                 break;
             case "ArrowRight":
                 this.x += this.velocity;
+                break;
+            case " ":
+                game.powers.push(new Power());
                 break;
         };
 
@@ -70,6 +74,6 @@ class Player {
                 enemy.deSpawn();
             }
         });
-     } 
     }
+}
 

@@ -52,7 +52,14 @@ startButton.onclick = () => {
                 enemy.move()
                 enemy.checkForBoundaries()
             })
+
+            game.powers.forEach((power) => {
+                power.move()
+                power.checkForBoundaries()
+            })
+
             requestAnimationFrame(gameLoop);
+
         } else {
             gameOverElement.style.display = 'flex'
             game.player.element.remove();
