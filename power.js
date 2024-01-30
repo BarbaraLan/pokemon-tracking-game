@@ -29,13 +29,28 @@ class Power {
         this.element.remove()
     }
 
+    crashTestPowers() {
+        game.enemies.forEach((enemy) => {
+            const enemyLeftEdge = enemy.x;
+            const enemyRightEdge = enemy.x + enemy.width;
+            const enemyTopEdge = enemy.y;
+            const enemyBottomEdge = enemy.y + enemy.height;
+
+            const powerLeftEdge = this.x;
+            const powerRightEdge = this.x + this.width;
+            const powerTopEdge = this.y;
+            const powerBottomEdge = this.y + this.height;
+
+            if (
+                powerLeftEdge < enemyRightEdge &&
+                powerRightEdge > enemyLeftEdge &&
+                powerTopEdge < enemyBottomEdge &&
+                powerBottomEdge > enemyTopEdge
+            ) {
+                game.catches += 1;
+                game.updateCatches();
+                enemy.deSpawn();
+            }
+        })
+    }
 }
-
-/* powerOption() {
-    this.element
-    document.createElement('')
-    const firePower = 
-
-            if () { }
-
-} */
