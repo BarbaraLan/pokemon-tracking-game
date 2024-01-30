@@ -1,5 +1,5 @@
 console.log('hello world')
-let level = 1;
+
 let enemyCreationFrame = 150;
 let catchesIncrementFrame = 10;
 let enemyVelocity = 10;
@@ -38,17 +38,19 @@ startButton.onclick = () => {
                 console.log(game.enemies);
             }
 
-            level = level2;
-            if (game.catches >= 10) {
+            if (game.catches >= 2) {
+                game.level = ' 2';
+                game.updateLevels();
                 enemyCreationFrame = 100;
                 game.player.element.style.backgroundImage = "url('./pokemon-images/charmeleon.png')"
             }
 
-            level = level3;
-            if (game.catches >= 20) {
+            if (game.catches >= 4) {
+                game.level = ' 3';
+                game.updateLevels();
                 enemyCreationFrame = 50;
                 game.player.element.style.backgroundImage = "url('./pokemon-images/Charizard2.webp')"
-            }
+            } 
 
             game.enemies.forEach((enemy) => {
                 enemy.move()
