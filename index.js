@@ -14,6 +14,9 @@ const boardHeight = boardElement.getBoundingClientRect().height;
 
 let game;
 const startButton = document.querySelector("#startButton");
+setTimeout(()=> {
+    startButton.style.visibility='visible' 
+},7500)
 startButton.onclick = () => {
     console.log('boton pulsado');
     const deletePage = document.querySelector("#start-board");
