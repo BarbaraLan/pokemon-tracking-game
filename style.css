@@ -23,30 +23,54 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translateY(-175%); 
-    
+    transform: translateY(-175%);
+
 }
 
-#logoImage img{
+#logoImage img {
     width: 380px;
 }
 
 h1 {
     text-align: center;
     color: rgb(6, 79, 190);
-    transform: translateY(-160%);
+    transform: translateY(-210%);
     font-size: 30px;
 }
 
-
-#musicButton img{
+#musicButton img {
     display: flex;
-    flex-direction: column;
-    justify-content:left;
+    flex-direction: row;
     width: 30px;
     height: 30px;
     gap: 30x;
+}
+
+#musicChoosing {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+    color: rgb(19, 99, 196);
+    font-size: 13px;
+    font-weight: 800;
+}
+
+#button-container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    visibility: hidden;
+    bottom: 250px;
+    gap: 10px;
+}
+
+.pressStart img{
+    width: 100px;
+    height: 100px;
     background-color: white;
+
 }
 
 #body {
@@ -82,11 +106,19 @@ h1 {
 }
 
 .Squirtle {
-    background-image: url('./pokemon-images/squirtle\ .webp');
+    background-image: url('./pokemon-images/squirtle.png');
+    background-size: cover;
 }
 
 .Bulbasaur {
     background-image: url('./pokemon-images/bulbasaur.png');
+}
+
+.power {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
 }
 
 .enemy {
@@ -97,7 +129,7 @@ h1 {
 }
 
 #gameOver {
-    position:absolute;
+    position: absolute;
     flex-direction: column;
     top: 50%;
     left: 50%;
@@ -105,13 +137,14 @@ h1 {
     display: none;
     gap: 40px;
 }
-#gameOver h2{
+
+#gameOver h3 {
     background-color: crimson;
     color: white;
     padding: 20px;
 }
 
-#gameOver button{
+#gameOver button {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -120,24 +153,4 @@ h1 {
     background-color: white;
     padding: 10px;
     color: red;
-}
-
-.power {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    background-image: url(./pokemon-images/fireBall2\ copy.png);
-    background-size: cover;
-}
-
-.pressStart img{
-    width: 100px;
-    height: 100px;
-}
-
-#button-container{
-    display: flex;
-    align-items: center;
-    visibility: hidden;
-    flex-direction: row;
 }

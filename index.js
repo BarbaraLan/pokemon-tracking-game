@@ -70,18 +70,18 @@ charactersArray.forEach((eachButton) => {
                     if (playMusicLevel2) {
                         let musicLevel2 = new Audio('./musicGame/levelUp.mp3');
                         playMusicLevel2 = false;
-                        musicLevel.play();
+                        musicLevel2.play();
                     }
                     enemyCreationFrame = 100;
         
-                    if (game.character === "Charmander") {
-                        this.element.style.backgroundImage = "url('./pokemon-images/charmeleon.png')"
+                    if (game.character === "charmander") {
+                        game.player.element.style.backgroundImage = "url('./pokemon-images/charmeleon.png')"
                     }
-                    else if (game.character === "Squirtle") {
-                        this.element.style.backgroundImage = "url('./pokemon-images/squirlEvol.jpeg')"
+                    else if (game.character === "squirtle") {
+                        game.player.element.style.backgroundImage = "url('./pokemon-images/squirlEvol.png')"
                     }
-                    else if (game.character === "Bulbasaur") {
-                        this.element.style.backgroundImage = "url('./pokemon-images/ivysaur.jpeg')"
+                    else if (game.character === "bulbasaur") {
+                        game.player.element.style.backgroundImage = "url('./pokemon-images/ivysaurcalm.png')"
                     }
                 }
         
@@ -91,19 +91,18 @@ charactersArray.forEach((eachButton) => {
                     if (playMusicLevel3) {
                         let musicLevel3 = new Audio('./musicGame/levelUp.mp3');
                         playMusicLevel3 = false;
-                        musicLevel.play();
+                        musicLevel3.play();
                     }
-                    musicLevel.play();
                     enemyCreationFrame = 50;
         
-                    if (game.character === "Charmander") {
-                        this.element.style.backgroundImage = "url('./pokemon-images/Charizard2.webp')"
+                    if (game.character === "charmander") {
+                        game.player.element.style.backgroundImage = "url('./pokemon-images/Charizard2.webp')"
                     }
-                    else if (game.character === "Squirtle") {
-                        this.element.style.backgroundImage = "url('./pokemon-images/blastoise.jpeg')"
+                    else if (game.character === "squirtle") {
+                        game.player.element.style.backgroundImage = "url('./pokemon-images/blastoise.png')"
                     }
-                    else if (game.character === "Bulbasaur") {
-                        this.element.style.backgroundImage = "url('./pokemon-images/venasaur.webp')"
+                    else if (game.character === "bulbasaur") {
+                        game.player.element.style.backgroundImage = "url('./pokemon-images/venasauri.png')"
                     }
                 }
         

@@ -86,14 +86,14 @@ class Player {
 class Charmander extends Player{
     constructor(x, y) {
         super(x, y);
-        this.element.classList.add = 'Charmander'
+        this.element.classList.add('Charmander')
     }
 }
 
 class Squirtle extends Player{
     constructor(x, y) {
         super(x, y);
-        this.element.classList.add = 'Squirtle'
+        this.element.classList.add('Squirtle')
         
     }
 }
@@ -101,7 +101,7 @@ class Squirtle extends Player{
 class Bulbasaur extends Player{
     constructor(x, y) {
         super(x, y);
-        this.element.classList.add = 'Bulbasaur'
+        this.element.classList.add('Bulbasaur')
         
     }
 }
