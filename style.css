@@ -23,7 +23,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translateY(-175%);
+    transform: translateY(-160%);
 
 }
 
@@ -34,7 +34,7 @@
 h1 {
     text-align: center;
     color: rgb(6, 79, 190);
-    transform: translateY(-210%);
+    transform: translateY(-330%);
     font-size: 30px;
 }
 
@@ -47,14 +47,19 @@ h1 {
 }
 
 #musicChoosing {
+    position: absolute;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     transform: translateY(-50%);
-    color: rgb(19, 99, 196);
-    font-size: 13px;
+    color:rgb(6, 79, 190);
+    background-color: rgb(247, 121, 155);
+    padding: 10px;
+    font-size: 9px;
     font-weight: 800;
+    bottom: 150px;
+    visibility: hidden;
 }
 
 #button-container {
@@ -98,7 +103,8 @@ h1 {
     left: 100px;
     width: 100px;
     height: 100px;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .Charmander {
@@ -107,7 +113,6 @@ h1 {
 
 .Squirtle {
     background-image: url('./pokemon-images/squirtle.png');
-    background-size: cover;
 }
 
 .Bulbasaur {

@@ -28,14 +28,14 @@ class Power {
 
     checkForBoundaries() {
         if (this.x >= boardWidth) {
-            this.deSpawn()
+            this.deSpawnPowers()
         }
     }
 
-    deSpawn() {
+    deSpawnPowers() {
+        this.element.remove()
         const powersIndex = game.powers.indexOf(this)
         game.powers.splice(powersIndex, 1)
-        this.element.remove()
     }
 
     crashTestPowers() {

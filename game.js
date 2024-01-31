@@ -11,14 +11,20 @@ class Game {
         this.lives = lives;
         this.updateLives();
 
-        if(this.character === 'charmander'){
-            this.player = new Charmander(100,100)
+        if (this.character === 'charmander') {
+            let charmanderSound = new Audio('./musicGame/charmander.mp3');
+            charmanderSound.play();
+            this.player = new Charmander(100, 100)
         }
-        if(this.character === 'squirtle'){
-            this.player = new Squirtle(100,100)
+        if (this.character === 'squirtle') {
+            let squirtleSound = new Audio('./musicGame/squirtle.mp3');
+            squirtleSound.play();
+            this.player = new Squirtle(100, 100)
         }
-        if(this.character === 'bulbasaur'){
-            this.player = new Bulbasaur(100,100)
+        if (this.character === 'bulbasaur') {
+            let bulbasaurSound = new Audio('./musicGame/bulbassaur.mp3');
+            bulbasaurSound.play();
+            this.player = new Bulbasaur(100, 100)
         }
     }
 
@@ -45,13 +51,18 @@ class Game {
             musicEnd.play();
             document.querySelector("#gameOver").style.display = 'flex';
             game.player.deSpawnPlayer();
+            document.querySelectorAll('.power').forEach((power) => {
+                power.remove()
+            })
+            console.log(game.powers.length);
             game.enemies.forEach((enemy) => {
-                enemy.deSpawn()})
+                enemy.deSpawn()
+            })
             document.querySelector("#game-board").style.backgroundImage = "url('./pokemon-images/endImage.gif')"
             document.querySelector("#gameStats").remove()
 
             const restartButton = document.querySelector("#restartButton")
-            restartButton.onclick =() => {
+            restartButton.onclick = () => {
                 location.reload()
             }
         }
