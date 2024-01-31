@@ -27,6 +27,8 @@ class Player {
                 break;
             case " ":
                 game.powers.push(new Power());
+                let musicPunch = new Audio('./musicGame/punchMusic.flac');
+                musicPunch.play();
                 break;
         };
 

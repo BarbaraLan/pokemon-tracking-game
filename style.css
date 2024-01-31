@@ -92,7 +92,7 @@ h1 {
     left: 50%;
     transform: translateY(140%) translateX(-30%);
     display: none;
-    gap: 50px;
+    gap: 40px;
 }
 #gameOver h2{
     background-color: crimson;
