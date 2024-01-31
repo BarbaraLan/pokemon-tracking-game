@@ -38,16 +38,6 @@ h1 {
     font-size: 30px;
 }
 
-#startButton {
-    display: flex;
-    align-items: center;
-    bottom: 150px;
-    font-size: 26px;
-    color: rgb(255, 42, 0);
-    background-color: rgb(239, 207, 207);
-    visibility: hidden;
-    padding: 10px;
-}
 
 #musicButton img{
     display: flex;
@@ -138,4 +128,16 @@ h1 {
     height: 40px;
     background-image: url(./pokemon-images/fireBall2\ copy.png);
     background-size: cover;
+}
+
+.pressStart img{
+    width: 100px;
+    height: 100px;
+}
+
+#button-container{
+    display: flex;
+    align-items: center;
+    visibility: hidden;
+    flex-direction: row;
 }
