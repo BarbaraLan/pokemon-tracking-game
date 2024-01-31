@@ -2,7 +2,6 @@ class Game {
     constructor(lives, character) {
         this.enemies = [];
         this.character = character;
-        this.player = new Player(100, 100);
         this.catches = 0;
         this.updateCatches();
         this.frames = 0;
@@ -11,6 +10,16 @@ class Game {
         this.level = ' 1'
         this.lives = lives;
         this.updateLives();
+
+        if(this.character === 'charmander'){
+            this.player = new Charmander(100,100)
+        }
+        if(this.character === 'squirtle'){
+            this.player = new Squirtle(100,100)
+        }
+        if(this.character === 'bulbasaur'){
+            this.player = new Bulbasaur(100,100)
+        }
     }
 
     updateLives() {

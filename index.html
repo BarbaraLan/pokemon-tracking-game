@@ -14,8 +14,25 @@
 <body>
     <div id="start-board">
         <h1>TRACKER</h1>
-        <button id="startButton" class="pressStart"> START GAME</button>
-        <button id="musicButton" class="pressStart"> <img src='./pokemon-images/musicLogo.png' alt="music Logo"> </button>
+
+        <div id="musicChoosing">
+            <h2>choose your character</h2>
+        </div>
+
+        <button id="musicButton" class="pressStart"> <img src='./pokemon-images/musicLogo.png' alt="music Logo">
+        </button>
+
+        <div id="button-container">
+            <button id="charmander" class="pressStart"> <img src='./pokemon-images/charmander2.png'
+                    alt="charmander Logo"></button>
+
+            <button id="squirtle" class="pressStart"> <img src='./pokemon-images/squirtle.png'
+                    alt="squirtle Logo"></button>
+
+            <button id="bulbasaur" class="pressStart"> <img src='./pokemon-images/bulbasaur.png' alt="bulbasaur Logo">
+            </button>
+        </div>
+
         <div id="logoImage">
             <img src="./pokemon-images/pokemonLogodef2.png" alt="pokemonLogo">
         </div>
@@ -29,10 +46,10 @@
     </div>
     <div id="player"></div>
     <div id="gameOver" class="view" style="display: none">
-        <h2>GAME OVER</h2>
-    
-            <button id="restartButton" class="pressRestart"> PLAY AGAIN</button>
-        
+        <h3>GAME OVER</h3>
+
+        <button id="restartButton" class="pressRestart"> PLAY AGAIN</button>
+
     </div>
 
     <script src="./game.js"></script>
