@@ -34,7 +34,7 @@
 h1 {
     text-align: center;
     color: rgb(6, 79, 190);
-    transform: translateY(-240%);
+    transform: translateY(-160%);
     font-size: 30px;
 }
 
@@ -47,6 +47,16 @@ h1 {
     background-color: rgb(239, 207, 207);
     visibility: hidden;
     padding: 10px;
+}
+
+#musicButton img{
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    width: 30px;
+    height: 30px;
+    gap: 30x;
+    background-color: white;
 }
 
 #body {
@@ -74,8 +84,19 @@ h1 {
     left: 100px;
     width: 100px;
     height: 100px;
-    background-image: url('./pokemon-images/charmander2.png');
     background-size: cover;
+}
+
+.Charmander {
+    background-image: url('./pokemon-images/charmander2.png');
+}
+
+.Squirtle {
+    background-image: url('./pokemon-images/squirtle\ .webp');
+}
+
+.Bulbasaur {
+    background-image: url('./pokemon-images/bulbasaur.png');
 }
 
 .enemy {

@@ -10,6 +10,15 @@ class Power {
         this.y = game.player.y;
         this.element.style.left = `${this.x}px`
         this.element.style.top = `${this.y}px`
+        if (game.character === "Charmander") {
+            this.element.style.backgroundImage = "url('./pokemon-images/fireBall2.png')"
+        }
+        else if (game.character === "Squirtle") {
+            this.element.style.backgroundImage = "url('./pokemon-images/waterBall2.png')"
+        }
+        else if (game.character === "Bulbasaur") {
+            this.element.style.backgroundImage = "url('./pokemon-images/leavesBall2.png')"
+        }
     }
 
     move() {
