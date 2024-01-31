@@ -1,6 +1,7 @@
 class Game {
-    constructor(lives) {
+    constructor(lives, character) {
         this.enemies = [];
+        this.character = character;
         this.player = new Player(100, 100);
         this.catches = 0;
         this.updateCatches();
