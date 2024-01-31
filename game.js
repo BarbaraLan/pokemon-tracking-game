@@ -30,6 +30,9 @@ class Game {
 
     endGame() {
         if (this.gameOver === true) {
+            musicGame.pause();
+            let musicEnd = new Audio('./musicGame/gameOver.mp3');
+            musicEnd.play();
             document.querySelector("#gameOver").style.display = 'flex';
             game.player.deSpawnPlayer();
             game.enemies.forEach((enemy) => {
