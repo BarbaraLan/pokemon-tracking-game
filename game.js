@@ -58,6 +58,9 @@ class Game {
             game.enemies.forEach((enemy) => {
                 enemy.deSpawn()
             })
+            document.querySelectorAll('.enemy').forEach((enemy) => {
+                enemy.remove()
+            })
             document.querySelector("#game-board").style.backgroundImage = "url('./pokemon-images/endImage.gif')"
             document.querySelector("#gameStats").remove()
 
