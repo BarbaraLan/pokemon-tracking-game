@@ -71,7 +71,7 @@ charactersArray.forEach((eachButton) => {
                     console.log(game.enemies);
                 }
 
-                if (game.catches >= 1) {
+                if (game.catches >= 15) {
                     game.level = ' 2';
                     game.updateLevels();
                     if (playMusicLevel2) {
@@ -79,7 +79,7 @@ charactersArray.forEach((eachButton) => {
                         playMusicLevel2 = false;
                         musicLevel2.play();
                     }
-                    enemyCreationFrame = 100;
+                    enemyCreationFrame = 70;
 
                     if (game.character === "charmander") {
                         game.player.element.style.backgroundImage = "url('./pokemon-images/charmeleon.png')"
@@ -92,7 +92,7 @@ charactersArray.forEach((eachButton) => {
                     }
                 }
 
-                if (game.catches >= 3) {
+                if (game.catches >= 30) {
                     game.level = ' 3';
                     game.updateLevels();
                     if (playMusicLevel3) {
@@ -100,7 +100,7 @@ charactersArray.forEach((eachButton) => {
                         playMusicLevel3 = false;
                         musicLevel3.play();
                     }
-                    enemyCreationFrame = 50;
+                    enemyCreationFrame = 25;
 
                     if (game.character === "charmander") {
                         game.player.element.style.backgroundImage = "url('./pokemon-images/Charizard2.webp')"
