@@ -5,7 +5,7 @@ window.addEventListener('load', function () {
     document.querySelector('#start-board').style.backgroundImage = `url('${backgroundImageUrl}')`;
 });
 
-let enemyCreationFrame = 150;
+let enemyCreationFrame = 50;
 let catchesIncrementFrame = 10;
 let enemyVelocity = 10;
 let gameLives = 3;
@@ -66,12 +66,9 @@ charactersArray.forEach((eachButton) => {
                 game.player.crashTest()
                 if (game.frames % enemyCreationFrame === 0) {
                     game.enemies.push(new Enemy(enemyVelocity));
-                    let musicEnemy = new Audio('./musicGame/enemySound2.wav');
-                    musicEnemy.play();
-                    console.log(game.enemies);
                 }
 
-                if (game.catches >= 15) {
+                if (game.catches >= 5) {
                     game.level = ' 2';
                     game.updateLevels();
                     if (playMusicLevel2) {
@@ -79,7 +76,7 @@ charactersArray.forEach((eachButton) => {
                         playMusicLevel2 = false;
                         musicLevel2.play();
                     }
-                    enemyCreationFrame = 70;
+                    enemyCreationFrame = 25;
 
                     if (game.character === "charmander") {
                         game.player.element.style.backgroundImage = "url('./pokemon-images/charmeleon.png')"
@@ -92,7 +89,7 @@ charactersArray.forEach((eachButton) => {
                     }
                 }
 
-                if (game.catches >= 30) {
+                if (game.catches >= 15) {
                     game.level = ' 3';
                     game.updateLevels();
                     if (playMusicLevel3) {
@@ -100,7 +97,7 @@ charactersArray.forEach((eachButton) => {
                         playMusicLevel3 = false;
                         musicLevel3.play();
                     }
-                    enemyCreationFrame = 25;
+                    enemyCreationFrame = 8;
 
                     if (game.character === "charmander") {
                         game.player.element.style.backgroundImage = "url('./pokemon-images/Charizard2.webp')"
