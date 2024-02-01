@@ -26,4 +26,4 @@ My project was divided in smaller tasks. I used Trello to organize  my tasks and
 
 LINK OF THE PUBLISHED GAME: https://barbaralan.github.io/pokemon-tracking-game/
 
-LINK OF THE SLIDES FOR THE PRESENTATION: 
+LINK OF THE SLIDES FOR THE PRESENTATION: https://www.canva.com/design/DAF7iIjmi5A/rvXt8Q8oS0ekFxeW1PkhJw/edit
